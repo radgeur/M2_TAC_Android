@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">JSON</string>
+    <string name="telephoneInput">Téléphone n°%d</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="adresse">Adresse</string>
+    <string name="code_postal">Code Postal</string>
+    <string name="n">N°</string>
+    <string name="rue">Rue</string>
+    <string name="ville">Ville</string>
+    <string name="t_l_phone">Téléphone</string>
+    <string name="ajouter_un_numro">Ajouter un numéro</string>
+    <string name="pr_nom">Prénom</string>
+    <string name="valider">Valider</string>
+    <string name="nom">Nom</string>
+    <string name="edit">EDIT</string>
+</resources>
