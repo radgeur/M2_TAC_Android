@@ -14,10 +14,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
+        inboxStyle.setBigContentTitle("Expanded layout Title");
+        inboxStyle.setSummaryText("Expanded layout Text");
+        inboxStyle.addLine("Line 1");
+        inboxStyle.addLine("Line 2");
+        inboxStyle.addLine("Line 3");
+        inboxStyle.addLine("Line 4");
+
         final NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
         mBuilder.setSmallIcon(R.drawable.notification_icon);
         mBuilder.setContentTitle("My notification");
         mBuilder.setContentText("This is my notification text");
+        mBuilder.setStyle(inboxStyle);
 
         final int notificationID = 1;
         final NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
@@ -29,5 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 mNotificationManager.notify(notificationID, mBuilder.build());
             }
         });
+
+
     }
 }
